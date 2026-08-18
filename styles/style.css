@@ -138,6 +138,22 @@ body {
     font-weight: 400;
 
 }
+.btn-cv {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2b6cb0; /* Color azul profesional o el color primario de tu portafolio */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+.btn-cv:hover {
+    background-color: #1c4ed8; /* Un tono más oscuro al pasar el ratón */
+    transform: translateY(-2px);
+}
 
 @media (max-width: 1250px) {
     .header {
