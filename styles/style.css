@@ -141,7 +141,7 @@ body {
 .btn-cv {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2b6cb0; /* Color azul profesional o el color primario de tu portafolio */
+    background-color: #2b6cb0;
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
@@ -151,25 +151,73 @@ body {
 }
 
 .btn-cv:hover {
-    background-color: #1c4ed8; /* Un tono más oscuro al pasar el ratón */
+    background-color: #1c4ed8; /
     transform: translateY(-2px);
 }
 
-@media (max-width: 1250px) {
+
+@media (max-width: 1024px) {
+    body {
+        height: auto; 
+        min-height: 100vh;
+    }
+
     .header {
-        padding: 10%;
-    
+        padding: 5% 5% 0 5%;
     }
 
-    .header__menu{
+    .header__menu {
+        flex-wrap: wrap; 
         justify-content: center;
+        gap: 20px;
     }
 
-    .presentacion{
-        flex-direction: column-reverse;
-        padding: 5%;
+    .presentacion {
+        flex-direction: column-reverse; 
+        padding: 8% 5%;
+        gap: 40px;
     }
-    .presentacion__contenido{
-        width: auto;
+
+    .presentacion__contenido, 
+    .presentacio__imagen {
+        width: 100%; 
     }
-  }
+
+    .presentacio__imagen {
+        max-width: 320px; 
+        margin: 0 auto;
+    }
+
+    .presentacion__enlaces__link {
+        width: 100%; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header__menu__link,
+    .btn-cv {
+        font-size: 1rem; /
+        padding: 10px 15px;
+    }
+
+    .presentacion__contenido__titulo {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .presentacion__contenido__texto {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .Presentacion__enlaces_subtitulo {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .footer {
+        font-size: 1rem;
+        padding: 1.5rem 1rem;
+    }
+}
